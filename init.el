@@ -65,7 +65,10 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; inf-clojure for figwheel
+    inf-clojure))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a

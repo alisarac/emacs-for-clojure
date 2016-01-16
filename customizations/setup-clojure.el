@@ -74,6 +74,12 @@
   (interactive)
   (cider-repl-set-ns "user"))
 
+(defun figwheel-repl ()
+  (interactive)
+  (run-clojure "lein figwheel"))
+
+(add-hook 'clojure-mode-hook #'inf-clojure-minor-mode)
+
 (eval-after-load 'cider
   '(progn
      (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
